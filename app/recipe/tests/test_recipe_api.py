@@ -247,7 +247,7 @@ class RecipeImageUploadTest(TestCase):
         url = image_upload_url(self.recipe.id)
 
         with tempfile.NamedTemporaryFile(suffix='.jpg') as ntf:
-            img = Image.new('RGB', (10, 10))
+            img = Image.new('RGB', (10, 10))  # create a fake image to use
 
             img.save(ntf, format='JPEG')
             ntf.seek(0)
@@ -267,7 +267,7 @@ class RecipeImageUploadTest(TestCase):
 
         self.assertEqual(res.status_code, status.HTTP_400_BAD_REQUEST)
 
-    def filter_recipes_by_tags(self):
+    def test_filter_recipes_by_tags(self):
         """Test returning recipes with specific tags. """
 
         recipe1 = sample_recipe(user=self.user, title='Thai vegetable curry')

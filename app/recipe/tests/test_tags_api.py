@@ -12,7 +12,7 @@ TAGS_URL = reverse('recipe:tag-list')
 class PublicTagsApiTests(TestCase):
     """ Test the publicly availabe tags API. """
 
-    def stUp(self):
+    def setUp(self):
         self.client = APIClient()
 
     def test_login_required(self):

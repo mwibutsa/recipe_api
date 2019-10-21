@@ -7,6 +7,10 @@ from recipe import serializers
 from rest_framework.decorators import action
 from rest_framework.response import Response
 
+# still need to clearly differentiate Different types of viewsets and Mixins
+
+# model viewset vs Generic viewset and other viewsets
+
 
 class BaseRecipeAttrViewSet(viewsets.GenericViewSet,
                             mixins.ListModelMixin,
