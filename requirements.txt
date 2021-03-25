@@ -15,7 +15,7 @@ pycodestyle==2.5.0
 pyflakes==2.1.1
 python-coveralls==2.9.3
 pytz==2019.3
-PyYAML==5.1.2
+PyYAML==5.4
 requests==2.22.0
 six==1.12.0
 sqlparse==0.3.0
