@@ -1,6 +1,6 @@
 asgiref==3.2.2
 autopep8==1.4.4
-certifi==2019.9.11
+certifi==2022.12.7
 chardet==3.0.4
 coverage==4.5.4
 Django==3.0b1
